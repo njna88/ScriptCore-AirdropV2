@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Airdrop System V2</title>
+</head>
+<body style="display:none;"> <div id="airdrop-container">
+        <div class="header">
+            <h1>AIRDROP SYSTEM</h1>
+            <p>Vælg fragt og destination</p>
+        </div>
+
+        <div class="content">
+            <div class="field-group">
+                <label>Leverings Zone</label>
+                <select id="location">
+                    <option value="1">Sandy Lufthavn</option>
+                    <option value="2">Grapeseed</option>
+                    <option value="3">Havnen</option>
+                    <option value="4">Lufthavnen</option>
+                    <option value="5">Kortz</option>
+                    <option value="6">Paleto Bay</option>
+                </select>
+            </div>
+
+            <label>Vælg Pakke</label>
+            <div class="package-grid">
+                <div class="package-card active" data-type="illegal_drugs">
+                    <div class="type-tag">TYPE: ILLEGAL</div>
+                    <h3>Massar Stoffer</h3>
+                    <p>Meth, Coke & Weed</p>
+                </div>
+
+                <div class="package-card" data-type="heavy_weapons">
+                    <div class="type-tag">TYPE: WEAPONS</div>
+                    <h3>Massar Våben</h3>
+                    <p>.50, Revolver & Shotgun</p>
+                </div>
+
+                <div class="package-card" data-type="criminal_package">
+                    <div class="type-tag">TYPE: MIXED</div>
+                    <h3>Kriminel Pakke</h3>
+                    <p>Våben, Stoffer & Armor</p>
+                </div>
+
+                <div class="package-card" data-type="supplies">
+                    <div class="type-tag">TYPE: UTILITY</div>
+                    <h3>Forsyninger</h3>
+                    <p>Mad, Vand & Armor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button id="confirm">BEKRÆFT AIRDROP´s</button>
+            <button id="close" class="secondary">ANNULLER</button>
+        </div>
+    </div>
+
+    <div id="debug-log"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
